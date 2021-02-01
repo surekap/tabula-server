@@ -1,0 +1,4 @@
+pyopenssl
+flask
+tabula-py
+gunicorn
