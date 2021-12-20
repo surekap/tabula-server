@@ -28,7 +28,7 @@ def pdf_to_stream():
 @app.route('/index', methods=['GET', 'POST'])
 def index():
 	who = request.args.get('name')
-	return Response("Hello " + who)
+	return Response("Hello " + str(who))
 
 
 if __name__ == "__main__":
