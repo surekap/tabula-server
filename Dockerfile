@@ -11,5 +11,8 @@ RUN pip3 install -r /requirements.txt
 COPY . /app
 
 EXPOSE 8000
-
+ENV VIRTUAL_HOST=tabula.hartex.in
+ENV VIRTUAL_PORT=8000
+ENV LETSENCRYPT_HOST=tabula.hartex.in
+ENV LETSENCRYPT_EMAIL=surekap@gmail.com
 ENTRYPOINT ["./run.sh"]
